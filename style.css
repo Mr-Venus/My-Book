@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*---------------------------------Home-----------------------------*//*---------------------------------Home-----------------------------*//*---------------------------------Home-----------------------------*//*---------------------------------Home-----------------------------*//*---------------------------------Home-----------------------------*/
+/*---------------------------------Home-----------------------------*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;  
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Background/back.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 12px;
+  cursor: pointer;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+  position: relative;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.menu .logo {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: burlywood;
+}
+
+.menu ul li::after {
+  content: '';
+  height: 3px;
+  width: 0px;
+  background: linear-gradient(to right, #ffab10, #ffe606);
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.menu ul li:hover::after {
+  width: 100%;
+}
+
+.conteudo {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: aliceblue;
+}
+
+.conteudo h1 {
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+.conteudo p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 20px;
+
+}
+
+.conteudo .botao {
+  width: 200px;
+  padding: 15px 0px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  border: 2px solid #ffe60694;
+  font-weight: bold;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.conteudo span {
+  background: linear-gradient(to right, #ffab10, #ffe606d0);
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  border-radius: 25px;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.botao:hover span {
+  width: 100%;
+}
+
+.botao:hover {
+  border: none;
+}
+
+.botao a {
+  text-decoration: none;
+  color: white;
+}
+
+/*------------------------------------------------------------------*/
+
+/*-----------------------Login/Cadastro-----------------------------*//*-----------------------Login/Cadastro-----------------------------*//*-----------------------Login/Cadastro-----------------------------*//*-----------------------Login/Cadastro-----------------------------*//*-----------------------Login/Cadastro-----------------------------*//*-----------------------Login/Cadastro-----------------------------*/
+
+.login {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Background/back2.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.form {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.top-buton {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  display: flex;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+
+.t-buton {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0px;
+  outline: none;
+  position: relative;
+}
+.t-buton a {
+  text-decoration: none;
+  color: #000
+}
+.bt {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #ffab10, #ffe606);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.bt-c {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to left, #ffab10, #ffe606);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.input-dados {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.login .input-dados .input {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid rgb(133, 128, 128);
+  outline: none;
+  background: transparent;
+}
+
+.login .input-dados .submit {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ffab10, #ffe606);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.login .input-dados .submit a {
+  text-decoration: none;
+  color: #000;
+}
+
+.login .input-dados .lembrar {
+  margin: 30px 10px 30px 0;
+}
+
+.login .input-dados span {
+  color: rgb(104, 98, 98);
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#Login {
+  left: 50px;
+}
+
+#Cadastro {
+  left: 50px;
+}
+
+/*------------------------------------------------------------------*/
+
+/*----------------------------Cadastro_Livro------------------------*//*----------------------------Cadastro_Livro------------------------*//*----------------------------Cadastro_Livro------------------------*/
+/*----------------------------Cadastro_Livro------------------------*/
+
+
+.cadastro_l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  background: rgb(53, 49, 49);
+  position: relative;
+
+}
+
+.forma {
+  background: rgb(233, 192, 11);
+  width: 1000px;
+  height: 760px;
+  max-width: 70vw;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px;
+  transform: skew(5deg, 2deg);
+  position: absolute;
+
+}
+
+.box {
+  justify-content: center;
+  position: relative;
+  display: flex;
+  background: #fff;
+  width: 720px;
+  height: 45vw;
+  padding: 10px 5px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px;
+  max-width: 70vw;
+}
+
+
+.title-l {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  text-align: center;
+  color: rgb(36, 36, 36);
+
+}
+
+fieldset {
+  border: none;
+}
+
+.input-livro {
+  outline: none;
+  margin: 5px 5px;
+  width: calc(100% - 10px);
+  height: 35px;
+  border: none;
+  background: rgb(255, 230, 146);
+  border-radius: 4px;
+  color: rgb(107, 100, 100);
+  font-weight: 600;
+  padding: 14px 10px 0px 10px;
+}
+
+.input-livro-ano {
+  outline: none;
+  margin: 10px 10px;
+  width: calc(100% - 10px);
+  height: 35px;
+  border: none;
+  background: rgb(255, 230, 146);
+  border-radius: 4px;
+  color: rgb(107, 100, 100);
+  font-weight: 600;
+  padding: 14px 10px 0px 10px;
+}
+
+.box label, .status p{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(179, 179, 146);
+  line-height: 30px;
+  top: 10px;
+  left: 20px;
+  user-select: none;
+}
+
+.submit-cadastro {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-cadastro {
+  height: 75px;
+}
+
+.submit-c {
+  cursor: pointer;
+  margin: 20px 0;
+  margin-left: 10px;
+  width: 90px;
+  height: 50px;
+  background: rgb(255, 183, 88);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.submit-c:hover {
+  transform: scale(1.2);
+  z-index: 1000px;
+  height: 45px;
+}
+
+.div-img-liv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.descr-div-img {
+  margin-top: 10px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  width: 270px;
+  color: rgba(51, 51, 51, 0.678);
+  background: linear-gradient(to right, rgb(255, 229, 196), rgb(255, 245, 202));
+  border-radius: 20px;
+  box-shadow: 3px 3px 25px rgb(252, 219, 176);
+}
+
+.img-liv {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(253, 200, 131);
+  box-shadow: 2px 2px 15px rgb(252, 219, 176);
+}
+
+
+/*------------------------------------------------------------------*/
